@@ -11,12 +11,12 @@ export class CategoriaService {
   constructor(private http: HttpClient) { }
 
     salvar(categoria: Categoria) : Observable<Categoria>{
-      return this.http.post<Categoria>('http: 3000/categorias', categoria);
+      return this.http.post<Categoria>('http://localhost:3000/categorias', categoria);
 
     }
   
     obterTodas() : Observable<Categoria[]>{
-      return this.http.get<Categoria[]>('http: 3000/categorias');
+      return this.http.get<Categoria[]>('http://localhost:3000/categorias');
 
     }
 }

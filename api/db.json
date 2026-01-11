@@ -6,9 +6,14 @@
       "descricao": "Lugares para fazer comprar e passear"
     },
     {
-      "nome": "Restaurantes Atualizado",
-      "descricao": "Lugares para alimentação",
-      "id": "081d"
+      "id": "1615",
+      "nome": "praias",
+      "descricao": "lugares para tomar banhp com a familia"
+    },
+    {
+      "id": "fcff",
+      "nome": "teste",
+      "descricao": "teste"
     }
   ]
 }
