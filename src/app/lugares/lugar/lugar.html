@@ -17,6 +17,18 @@
 
         <div class="mb-4">
              <label for="nome" class="block text-gray-600 font-medium mb-2">Categoria</label>
+             <select
+                id="Categoria"
+                name="Categoria"
+                formControlName="Categoria"
+                class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
+             >
+             <option [value]="">Selecione uma Categoria</option>
+             <option *ngFor="let cat of categorias " [value]="cat.nome">
+                {{ cat.nome }}
+             </option>
+
+             </select>
         </div>
 
         <div class="mb-4">
@@ -32,7 +44,7 @@
         </div>
 
         <div class="mb-4">
-             <label for="urlFoto" class="block text-gray-600 font-medium mb-2">Localização</label>
+             <label for="urlFoto" class="block text-gray-600 font-medium mb-2">Foto</label>
              <input
                  type="text"
                  id="urlFoto"
@@ -44,13 +56,27 @@
         </div>
 
         <div class="mb-4">
-             <label for="nome" class="block text-gray-600 font-medium mb-2">Avaliação</label>
+             <label for="avaliacao" class="block text-gray-600 font-medium mb-2">Avaliação</label>
+             <select
+                id="avaliacao"
+                name="avaliacao"
+                formControlName="avaliacao"
+                class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
+             >
+             <option [value]="">Selecione uma avaliação</option>
+             <option [value]="1">1 - Ruim</option>
+             <option [value]="2">2 - Regular</option>
+             <option [value]="3">3 - Bom</option>
+             <option [value]="4">4 - Muito Bom</option>
+             <option [value]="5">5 - Excelente</option>
+             </select>
         </div>
+        
+        <button type="submit" 
+                class="w-full bg-blue-500 text-white p-3 rounded shadow-sm hover:bg-blue-600 disabled:bg-400">
+                Cadastrar Lugar
+            </button>
     </form>
 
 
-    <button type="submit" 
-                class="w-full bg-blue-500 text-white p-3 rounded shadow-sm hover:bg-blue-600 disabled:bg-400">
-            Cadastrar Lugar
-        </button>
 </div>
