@@ -1,30 +1,34 @@
 {
   "categorias": [
     {
+      "id": "1",
+      "nome": "Shoppings",
+      "descricao": "Lugares para fazer compras e passear"
+    },
+    {
       "id": "2",
-      "nome": "Shoopings",
-      "descricao": "Lugares para fazer comprar e passear"
+      "nome": "Praias",
+      "descricao": "Lugares para tomar banho com a família"
     },
     {
-      "id": "1615",
-      "nome": "praias",
-      "descricao": "lugares para tomar banhp com a familia"
+      "id": "3",
+      "nome": "Bares",
+      "descricao": "Lugares para descontração e petiscos"
     },
     {
-      "id": "fcff",
-      "nome": "teste",
-      "descricao": "teste"
+      "id": "4",
+      "nome": "Parques",
+      "descricao": "Áreas verdes e lazer ao ar livre"
     }
   ],
   "lugares": [
-   
     {
       "id": "3d61",
       "nome": "Praia do Espelho",
       "categoria": "Praias",
-      "localizacao": "Bhaia",
+      "localizacao": "Bahia",
       "urlFoto": "https://www.melhoresdestinos.com.br/wp-content/uploads/2020/11/praia-do-espelho-capa2019-820x430.jpg",
-      "avaliacao": "5"
+      "avaliacao": 5
     },
     {
       "id": "1329",
@@ -32,7 +36,7 @@
       "categoria": "Parques",
       "localizacao": "São Paulo",
       "urlFoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlS0KVxc3xckbdxHnnv1a7513_rJa5q8b3wA&s",
-      "avaliacao": "4"
+      "avaliacao": 4
     },
     {
       "id": "6ba7",
@@ -40,7 +44,7 @@
       "categoria": "Bares",
       "localizacao": "Minas Gerais",
       "urlFoto": "https://curitibacult.com.br/wp-content/uploads/2021/12/bar-folia.png",
-      "avaliacao": "3"
+      "avaliacao": 3
     }
   ]
 }

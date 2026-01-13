@@ -21,17 +21,16 @@
         <div class="mb-4">
             <label for="categoria" class="block text-gray-600 font-medium mb-2">Categoria</label>
             <select
-                id="categoria"
-                name="categoria"
-                formControlName="categoria" 
-                class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
-            >
-                <option value="" disabled selected>Selecione uma Categoria</option>
-                <option value="Shoppings">Shoppings</option>
-                <option value="Praias">Praias</option>
-                <option value="Bares">Bares</option>
-                <option value="Parques">Parques</option>
-            </select>
+    id="categoria"
+    name="categoria"
+    formControlName="categoria" 
+    class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
+>
+    <option value="" disabled selected>Selecione uma Categoria</option>
+    <option *ngFor="let cat of categorias" [value]="cat.nome">
+        {{ cat.nome }}
+    </option>
+</select>
 
             <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('categoria')">
                 Campo Obrigatorio
