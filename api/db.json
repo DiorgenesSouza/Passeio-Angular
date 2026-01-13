@@ -15,5 +15,15 @@
       "nome": "teste",
       "descricao": "teste"
     }
+  ],
+  "lugares": [
+    {
+      "id": "e961",
+      "nome": "praia do zé",
+      "Categoria": "praias",
+      "localizacao": "teste",
+      "urlFoto": "teste",
+      "avaliacao": "4"
+    }
   ]
 }
