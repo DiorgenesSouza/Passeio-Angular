@@ -29,4 +29,8 @@ export class Galeria implements OnInit {
     
   }
 
+  getTotalEstrelas(lugar: Lugar) : string {
+    return '&#9733;'.repeat(lugar.avaliacao || 0);
+  }
+
 }
