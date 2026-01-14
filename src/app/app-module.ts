@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { Landingpage } from './landingpage/landingpage';
+import { provideOAuthClient } from 'angular-oauth2-oidc'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { Landingpage } from './landingpage/landingpage';
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
     provideClientHydration(withEventReplay()),
-    provideHttpClient()
+    provideHttpClient(withFetch()),
+    provideOAuthClient()
   ],
   bootstrap: [App]
 })

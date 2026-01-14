@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core'; // Adicionamos o inject aqui
 import { Profile } from './profile.model';
 import { Router } from '@angular/router';
+import { AuthgoogleService } from '../authgoogle-service';
 
 @Component({
   selector: 'app-landingpage',
@@ -9,21 +10,25 @@ import { Router } from '@angular/router';
   styleUrl: './landingpage.scss',
 })
 export class Landingpage {
+  // Injetamos os serviços de forma moderna
+  private loginService = inject(AuthgoogleService);
+  private router = inject(Router);
 
-  profile: Profile | undefined;
+  // Agora o "profilesignal" consegue ler o loginService sem erro!
+  public profilesignal = this.loginService.profile;
 
-  constructor(private router: Router) {}
+  // O construtor fica vazio ou pode ser removido
+  constructor() {}
 
-  navegar(){
+  navegar() {
     this.router.navigate(['/paginas/galeria']);
   } 
 
-  logarComGoogle(){
+  logarComGoogle() {
+    this.loginService.login();
+  }
 
+  isLoggedIn(): boolean {
+    return !!this.profilesignal();
   }
-  //está logado?//
-  isLoggedIn() : boolean{
-    return !!this.profile;
-  }
-   
 }
