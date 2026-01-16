@@ -2,10 +2,10 @@ FROM node:22-alpine
 
 WORKDIR /APP
 
-RUN npm install -g json-serve@0.17.4
+RUN npm install -g json-server@0.17.4
 
-COPY .db.production.json .
+COPY db.production.json .
 
-EXPOSE 4000 
+EXPOSE 4000
 
-ENTRYPOINT json-serve --watch db.production.json --host 0.0.0.0 --pot 4000
+ENTRYPOINT ["json-server", "--watch", "db.production.json", "--host", "0.0.0.0", "--port", "4000"]
