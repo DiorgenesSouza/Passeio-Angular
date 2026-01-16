@@ -19,6 +19,16 @@
       "id": "4",
       "nome": "Parques",
       "descricao": "Áreas verdes e lazer ao ar livre"
+    },
+    {
+      "nome": "shoping",
+      "descricao": "Lugar para passear com a família",
+      "id": "ngQoyqR"
+    },
+    {
+      "nome": "Restaurante",
+      "descricao": "Lugar com uma ótima gastronomia para comer com a família",
+      "id": "jvM-FyY"
     }
   ],
   "lugares": [
@@ -45,6 +55,22 @@
       "localizacao": "Minas Gerais",
       "urlFoto": "https://curitibacult.com.br/wp-content/uploads/2021/12/bar-folia.png",
       "avaliacao": 3
+    },
+    {
+      "nome": "Parque shopping ",
+      "categoria": "Shoppings",
+      "localizacao": "Brasília",
+      "urlFoto": "https://assets.multiplan.com.br/Multiplan/filer_public/07/76/0776d9f3-548d-4570-aa45-a769f08577e0/dji_0622-hdr.jpg?ims=x800",
+      "avaliacao": "5",
+      "id": "xqAnA7X"
+    },
+    {
+      "nome": "Restaurante Outback",
+      "categoria": "Restaurante",
+      "localizacao": "Curitiba",
+      "urlFoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRblm3DzXsBctrh7MjeAAeBMcuhEdPa9hgnBnCBEpzVHA&s",
+      "avaliacao": "5",
+      "id": "AvECKeI"
     }
   ]
 }

@@ -1,0 +1,45 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Shoppings",
+      "descricao": "Lugares para fazer compras e passear"
+    },
+    {
+      "id": "2",
+      "nome": "Praias",
+      "descricao": "Lugares para tomar banho com a família"
+    },
+    {
+      "id": "3",
+      "nome": "Bares",
+      "descricao": "Lugares para descontração e petiscos"
+    },
+    {
+      "id": "4",
+      "nome": "Parques",
+      "descricao": "Áreas verdes e lazer ao ar livre"
+    },
+    {
+      "nome": "shoping",
+      "descricao": "Lugar para passear com a família",
+      "id": "ngQoyqR"
+    },
+    {
+      "nome": "Restaurante",
+      "descricao": "Lugar com uma ótima gastronomia para comer com a família",
+      "id": "jvM-FyY"
+    }
+  ],
+  "lugares": [
+    {
+      "id": "3d61",
+      "nome": "Praia do Encanto",
+      "categoria": "Praias",
+      "localizacao": "Bahia",
+      "urlFoto": "https://www.melhoresdestinos.com.br/wp-content/uploads/2020/11/praia-do-espelho-capa2019-820x430.jpg",
+      "avaliacao": 5
+    }
+  
+  ]
+}
