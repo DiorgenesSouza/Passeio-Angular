@@ -1,0 +1,8 @@
+[[plugins]]
+  package = "@netlify/angular-runtime"
+  [plugins.inputs]
+    disableSSR = true
+
+[build]
+  command = "npm run build"
+  publish = "dist/passeio-app/browser"
